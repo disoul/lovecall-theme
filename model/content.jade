@@ -1,0 +1,6 @@
+#article-block.mdl-card.mdl-shadow--2dp
+  .mdl-card__title(style=('background-image: url("#{articles[0].picture}"); height: 100px'))
+    h2.mdl-card__title-text !{articles[0].title}
+  .tags.mdl-card__supporting-text !{articles[0].content}
+  .mdl-card__actions.mdl-card--border#readmore
+    a(href='/archives/' + articles[0].time.year + '/' + articles[0].time.month + '/' + articles[0].name + '.html').mdl-button.mdl-button-icon.mdl-js-button.mdl-js-ripple-effect ReadMore
