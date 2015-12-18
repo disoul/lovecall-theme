@@ -1,9 +1,9 @@
 each article in articles
-  if article.index != 0
+  if article.index != articleLength - 1
     #article-block().mdl-card.mdl-shadow--2dp
       .mdl-card__title(style=('background-image: url("#{article.picture}"); height: 250px'))
         h2.mdl-card__title-text !{article.title}
-      if article.index == 1
+      if article.index == articleLength - 2
         .tags.mdl-card__supporting-text !{article.content}
       else
         .tags.mdl-card__supporting-text !{article.preview}
