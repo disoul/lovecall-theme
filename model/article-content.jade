@@ -6,7 +6,7 @@
   .article-content !{article.content}
 
   // duoshuo
-  .ds-thread(data-thread-key="#{article.index}" data-title="#{article.title}" data-url="http://home.lovecall.moe")
+  .ds-thread(data-thread-key="#{article.index}" data-title="#{article.title}" data-url="http://home.lovecall.moe#{article.url}")
   script.
     var duoshuoQuery = {short_name:"lovecall"};
       (function() {

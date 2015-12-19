@@ -1,6 +1,6 @@
 #article-block
   h2.title !{articles[articleLength - 1].title}
   .tags
-    each tag in articles[0].tag
+    each tag in articles[articleLength - 1].tag
       a(href="/tag/#{tag}.html") !{tag}
   .article-content !{articles[articleLength - 1].content}
