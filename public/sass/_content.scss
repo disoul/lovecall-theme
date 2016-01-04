@@ -1,6 +1,13 @@
 @import "compass/css3";
-.mdl-layout_content {
-  background-color: palette(Grey,200);
+
+
+.mdl-layout {
+  min-height: 100%;
+}
+
+
+.mdl-layout__container {
+  position: relative;
 }
 
 .page-content {  
